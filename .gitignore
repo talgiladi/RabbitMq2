@@ -1,0 +1,10 @@
+/.vs
+/Send/.vs/Send
+/Receive/.vs/Receive
+
+
+*.dll
+*.exe
+*.pdb
+*.cache
+*/obj/*
