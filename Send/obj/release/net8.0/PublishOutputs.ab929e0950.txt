@@ -1,0 +1,6 @@
+C:\Send.exe
+C:\Send.dll
+C:\Send.deps.json
+C:\Send.runtimeconfig.json
+C:\Send.pdb
+C:\RabbitMQ.Client.dll
