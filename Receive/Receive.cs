@@ -31,8 +31,8 @@ public class QueueConsumerService : BackgroundService
         var factory = new ConnectionFactory() { HostName = "rabbitmq" };
         var connection = factory.CreateConnection();
         _channel = connection.CreateModel();
-        _channel.QueueDeclare(queue: "hello",
-                     durable: false,
+        _channel.QueueDeclare(queue: "LargeFiles",
+                     durable: true,
                      exclusive: false,
                      autoDelete: false,
                      arguments: null);
@@ -47,9 +47,9 @@ public class QueueConsumerService : BackgroundService
         {
             var body = ea.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
-            Console.WriteLine($" [x] Received {message}");
+            Console.WriteLine($" [x] Received message");
         };
-        _channel.BasicConsume(queue: "hello", autoAck: true, consumer: consumer);
+        _channel.BasicConsume(queue: "LargeFiles", autoAck: true, consumer: consumer);
 
         return Task.CompletedTask;
     }

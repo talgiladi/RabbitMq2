@@ -45,3 +45,4 @@ C:\Users\Public\temp\RabbitMqTest\Receive\obj\Debug\net8.0\refint\Receive.dll
 C:\Users\Public\temp\RabbitMqTest\Receive\obj\Debug\net8.0\Receive.pdb
 C:\Users\Public\temp\RabbitMqTest\Receive\obj\Debug\net8.0\Receive.genruntimeconfig.cache
 C:\Users\Public\temp\RabbitMqTest\Receive\obj\Debug\net8.0\ref\Receive.dll
+C:\Users\Public\temp\RabbitMqTest\Receive\obj\Debug\net8.0\Receive.sourcelink.json
